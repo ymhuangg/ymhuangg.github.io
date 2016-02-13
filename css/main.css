@@ -201,6 +201,7 @@ section {
 /* .container .gray_section*/
 .gray_section {
 	background-color: #061924;
+	padding: 50px 0px;
 }
 .gray_section .article_preview {
 	font-size: 0px;
