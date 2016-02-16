@@ -1,0 +1,8 @@
+CACHE MANIFEST
+#version 1.0
+CACHE:
+	images/bg.jpg
+	images/section-1.jpg
+	css/reset.css
+NETWORK:
+	*
