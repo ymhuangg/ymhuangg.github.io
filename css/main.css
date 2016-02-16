@@ -166,8 +166,6 @@ section {
 
 .pic6{
 	width: 170px;
-	top: 0px;
-	left: 720px;
 	transform: rotate(10deg);
 	-webkit-transform:rotate(10deg);
 }
