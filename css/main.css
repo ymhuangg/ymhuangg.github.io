@@ -153,23 +153,23 @@ section {
 }
 
 .pic3{
-	width: 220px;
+	width: 250px;
 	transform: rotate(5deg);
 	-webkit-transform:rotate(5deg);
 }
 
 .pic4{
 	width: 170px;
-	transform: rotate(5deg);
-	-webkit-transform:rotate(5deg);
+	transform: rotate(-10deg);
+	-webkit-transform:rotate(-10deg);
 }
 
 .pic6{
 	width: 170px;
 	top: 0px;
 	left: 720px;
-	transform: rotate(-5deg);
-	-webkit-transform:rotate(-5deg);
+	transform: rotate(10deg);
+	-webkit-transform:rotate(10deg);
 }
 
 .green_section .wrapper .img-box img {
