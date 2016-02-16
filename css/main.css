@@ -1,5 +1,5 @@
 body {
-	min-width: 1060px;
+	min-width: 1120px;
 }
 
 * {
@@ -16,7 +16,8 @@ body {
 
 /*header start*/
 nav{
-	background-color: transparent;
+	display: block;
+	 background-color: transparent; 
 	height: 50px;
 }
 nav ul li,
@@ -140,44 +141,35 @@ section {
 .pic {
 	border-radius: 5px;
 	height: auto;
+	top: -30px;
 }
 .pic1 {
 	width: 180px;
-	left: 150px;
-	top: 0px;
 	transform: rotate(-5deg);
 	-webkit-transform:rotate(-5deg);
 }
 .pic2{
 	width: 200px;
-	left: 340px;
-	top: 0px;
 	transform: rotate(-20deg);
 	-webkit-transform:rotate(-20deg);
 }
 
 .pic3{
-	width: 220px;
-	top: 40px;
-	left: 900px;
+	width: 250px;
 	transform: rotate(5deg);
 	-webkit-transform:rotate(5deg);
 }
 
 .pic4{
 	width: 170px;
-	top: 0px;
-	left: 540px;
-	transform: rotate(5deg);
-	-webkit-transform:rotate(5deg);
+	transform: rotate(-10deg);
+	-webkit-transform:rotate(-10deg);
 }
 
 .pic6{
 	width: 170px;
-	top: 0px;
-	left: 720px;
-	transform: rotate(-5deg);
-	-webkit-transform:rotate(-5deg);
+	transform: rotate(10deg);
+	-webkit-transform:rotate(10deg);
 }
 
 .green_section .wrapper .img-box img {
@@ -188,7 +180,7 @@ section {
 	z-index: 1;
 	-webkit-transition: all 1s;
 	transition: all 1s;
-	position: absolute;
+	position: relative;
 }
 
 .green_section .wrapper img:hover {
@@ -225,28 +217,29 @@ section {
 }
 .gray_section .img_section {
 	width: 45%;
+	height: 100%;
 }
 .article_preview .img_section img {
 	width: 100%;
+	height: 100%;
 }
 .article_preview .text_section {
 	width: 55%;
 	box-sizing: border-box;
-	padding: 60px 0px 10px 100px;
+	padding-top: 50px;
+	padding-left: 50px;
 }
 .text_section h2 {
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .text_section p {
 	text-indent: 2em;
 	width: 85%;
 	line-height: 25px;
 	font-size: 18px;
-	max-height: 100px;
-	overflow: auto;
-	
+	max-height: 100px;	
 }
 /* .container .purple_section*/
 .purple_section {
@@ -348,7 +341,7 @@ ul.share_group .copy {
 
 .main_wrapper {
 	background-image:url(../images/bg.jpg);
-	background-repeat:no-repeat;
+	background-repeat:repeat-y;
 	background-attachment:fixed;
 	background-position: center;
 
