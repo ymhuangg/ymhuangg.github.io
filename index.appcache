@@ -1,8 +1,12 @@
 CACHE MANIFEST
-#version 1.0
+#version 1.0.1
 CACHE:
 	images/bg.jpg
 	images/section-1.jpg
+	images/s.gif
+	images/loading.gif
 	css/reset.css
+	js/CJL.0.1.min.js
+	js/LazyLoad.js
 NETWORK:
 	*
