@@ -143,31 +143,23 @@ section {
 }
 .pic1 {
 	width: 180px;
-	left: 150px;
-	top: 0px;
 	transform: rotate(-5deg);
 	-webkit-transform:rotate(-5deg);
 }
 .pic2{
 	width: 200px;
-	left: 340px;
-	top: 0px;
 	transform: rotate(-20deg);
 	-webkit-transform:rotate(-20deg);
 }
 
 .pic3{
 	width: 220px;
-	top: 40px;
-	left: 900px;
 	transform: rotate(5deg);
 	-webkit-transform:rotate(5deg);
 }
 
 .pic4{
 	width: 170px;
-	top: 0px;
-	left: 540px;
 	transform: rotate(5deg);
 	-webkit-transform:rotate(5deg);
 }
@@ -188,7 +180,7 @@ section {
 	z-index: 1;
 	-webkit-transition: all 1s;
 	transition: all 1s;
-	position: absolute;
+	position: relative;
 }
 
 .green_section .wrapper img:hover {
