@@ -17,7 +17,11 @@ body {
 /*header start*/
 nav{
 	display: block;
+<<<<<<< HEAD
 	 background-color: transparent; 
+=======
+	/* background-color: transparent; */
+>>>>>>> origin/master
 	height: 50px;
 }
 nav ul li,
@@ -44,6 +48,7 @@ nav > ul > li > a {
 }
 
 #banner{
+	background-color: rgb(0, 0, 0);
 	background-color: rgba(0, 0, 0, 0.3);
 	height: 480px;
 	text-align: center;
