@@ -342,4 +342,5 @@ ul.share_group .copy {
 .main_wrapper {
 	background-image:url(../images/bg.jpg);
 	background-position: center;
+    background-attachment: fixed;
 }
