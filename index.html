@@ -1,114 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-Hans">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简介</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+<meta charset="utf-8">
+<title>作品展示</title>
+<link rel="stylesheet" href="css/viewer.min.css">
+<style>
+* { margin: 0; padding: 0;}
+html,body {
+	width: 100%;
+	height: 100%;
+	background-image: url(./img/fancy_deboss.png)
+}
+#dowebok { padding-top: 100px; width: 100%; margin: 0 auto; font-size: 0; text-align: center;}
+#dowebok li {width: 200px; height: 150px; display: inline-block; margin-left: 1%; padding-top: 1%;}
+#dowebok li img { width: 100%; height: 100%;}
+</style>
 </head>
 
 <body>
-    <div class="main_wrapper">
-        <!-- header start -->
-        <header>
-            <nav>
-                <div class="logo"><a href="#">初见与入迷</a></div>
-                <ul>
-                    <li>
-                        <a class="fa fa-link" href="#"></a>
-                    </li>
-                    <li>
-                        <a href="#"></a>
-                    </li>
-                    <li>
-                        <a href="#"></a>
-                    </li>
-                    <li>
-                        <a href="#"></a>
-                    </li>
-                </ul>
-            </nav>
-            <div id="banner">
-                <div class="inner">
-                    <h1>黄英苗</h1>
-                    </br>
-                    <p>15年毕业于深圳信息学院，开始从事web页面开发</p>
-                    <div class="more">
-                        <p><a href="#a1">更多</a></p>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- container start -->
-        <div id="container">
-            <a id="a1"></a>
-            <section class="green_section">
-                <div class="wrapper">
-                    <div>
-                        <h2>qu ni jia wan haoma?</h2>
-                    </div>
-                    <div id="mainContent">
-                        <div class="img-box floorMain">
-                            <img class="pic pic1" src="images/img-box-1.jpg" alt="beauty">
-                            <img class="pic pic2" src="images/img-box-2.jpg" alt="beauty">
-                            <img class="pic pic3" src="images/img-box-3.jpg" alt="beauty">
-                            <img class="pic pic4" src="images/img-box-4.jpg" alt="beauty">
-                            <img class="pic pic6" src="images/img-box-6.jpg" alt="beauty">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="gray_section">
-                <div class="article_preview">
-                    <div class="img_section">
-                        <img src="images/section-1.jpg">
-                    </div>
-                    <div class="text_section">
-                        <h2>个人简介</h2>
-                        <p>94年出生 男</p>
-                        <p>
-                            热衷与web前端，熟悉HTML5的特性，能够独立实现CSS3各种动画效果，了解移动端开发，hybirdApp开发;较注重用户体验，因此会经常浏览各类网站的交互并且吸收（比如图片压缩，预加载，使用webpack合并文件等）;
-                        </p>
-                        <p>熟练使用Angularjs，Jquery框架，了解框架ReactJS与Vuejs等框架</p>
-                    </div>
-                </div>
-            </section>
-            <section class="purple_section">
-                <div class="heading_wrapper">
-                    <h2>专业技能</h2>
-                </div>
-                <div class="card_group">
-                    <div class="card card_1">
-                        <h2>H5</h2>
-                        <p>了解H5新特性，可以进行web页面，webApp与hybirdApp开发</p>
-                    </div>
-                    <div class="card card_2">
-                        <h2>CSS3</h2>
-                        <p>熟练使用CCS3</p>
-                    </div>
-                    <div class="card card_3">
-                        <h2>Javascript</h2>
-                        <p>扎实的Javascript基础，熟练使用Angularjs，Jquery框架，了解框架ReactJS与Vuejs等框架</p>
-                    </div>
-                    <div class="card card_4">
-                        <h2>Nodejs</h2>
-                        <p>一定的后端基础，可以使用express+mogonDB做后端开发</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!-- footer start -->
-        <footer>
-            <div class="copy">
-                &copy 初见与入迷 - 2016
-            </div>
-        </footer>
-    </div>
-    <!-- <script type="text/javascript" src="js/CJL.0.1.min.js"></script> -->
-    <!-- <script type="text/javascript" src="js/LazyLoad.js"></script> -->
-    <!-- <script type="text/javascript" src="js/main.js"></script> -->
-</body>
 
+<ul id="dowebok"></ul>
+
+<script src="js/viewer.min.js"></script>
+<script>
+
+var dowebok =  document.getElementById("dowebok");
+var imgs = [
+	{ src: './img/1.jpg' },
+	{ src: './img/2.jpg' },
+	{ src: './img/3.jpg' },
+	{ src: './img/4.jpg' },
+	{ src: './img/5.jpg' },
+	{ src: './img/5.jpg' },
+	{ src: './img/7.jpg' },
+	{ src: './img/8.jpg' },
+	{ src: './img/9.jpg' },
+	{ src: './img/10.jpg' },
+	{ src: './img/11.jpg' },
+	{ src: './img/12.jpg' },
+	{ src: './img/13.jpg' },
+	{ src: './img/14.jpg' },
+	{ src: './img/15.jpg' },
+	{ src: './img/16.jpg' },
+	{ src: './img/17.jpg' },
+	{ src: './img/18.jpg' },
+	{ src: './img/19.jpg' },
+	{ src: './img/20.jpg' },
+	{ src: './img/21.jpg' },
+	{ src: './img/22.jpg' },
+	{ src: './img/23.jpg' },
+	{ src: './img/24.jpg' },
+]
+
+for (var i = 0; i < imgs.length; i++) {
+	var img = document.createElement("img");
+	img.src = imgs[i].src;
+
+	var li = document.createElement("li");
+	li.appendChild(img);
+	dowebok.appendChild(li);
+}
+
+
+var viewer = new Viewer(document.getElementById('dowebok'), {
+	url: 'data-original'
+});
+</script>
+
+</body>
 </html>
