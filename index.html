@@ -13,14 +13,19 @@ html,body {
 	height: 100%;
 	background-image: url(./img/fancy_deboss.png)
 }
-#dowebok { padding-top: 100px; padding-bottom: 100px; width: 100%; margin: 0 auto; font-size: 0; text-align: center;}
+#dowebok { padding-bottom: 50px; width: 100%; margin: 0 auto; font-size: 0; text-align: center;}
 #dowebok li {width: 30%; display: inline-block; margin-left: 1%; padding-top: 1%;}
 #dowebok li img { width: 100%; height: 100%;}
+.title {
+	text-align: center;
+	margin: 20px;
+	color: #5d5d5d;
+}
 </style>
 </head>
 
 <body>
-
+<h2 class="title">作品展示</h2>
 <ul id="dowebok"></ul>
 
 <script src="js/viewer.min.js"></script>
@@ -35,7 +40,7 @@ var imgs = [
 	{ src: './img/5.jpg' },
 	{ src: './img/6.jpg' },
 	{ src: './img/7.jpg' },
-	{ src: './img/8.jpg' },
+	// { src: './img/8.jpg' },
 	{ src: './img/9.jpg' },
 	{ src: './img/10.jpg' },
 	{ src: './img/11.jpg' },
@@ -49,7 +54,7 @@ var imgs = [
 	{ src: './img/19.jpg' },
 	{ src: './img/20.jpg' },
 	{ src: './img/21.jpg' },
-	{ src: './img/22.jpg' },
+	// { src: './img/22.jpg' },
 	{ src: './img/23.jpg' },
 	{ src: './img/24.jpg' },
 ]
@@ -64,9 +69,13 @@ for (var i = 0; i < imgs.length; i++) {
 }
 
 
-var viewer = new Viewer(document.getElementById('dowebok'), {
+// setTimeout(function (argument) {
+	var viewer = new Viewer(document.getElementById('dowebok'), {	
 	url: 'data-original'
 });
+// }, 5000)
+
+
 </script>
 
 </body>
