@@ -1,82 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"></meta>
-<title>作品展示</title>
-<link rel="stylesheet" href="css/viewer.min.css">
-<style>
-* { margin: 0; padding: 0;}
-html,body {
-	width: 100%;
-	height: 100%;
-	background-image: url(./img/fancy_deboss.png)
-}
-#dowebok { padding-bottom: 50px; width: 100%; margin: 0 auto; font-size: 0; text-align: center;}
-#dowebok li {width: 30%; display: inline-block; margin-left: 1%; padding-top: 1%;}
-#dowebok li img { width: 100%; height: 100%;}
-.title {
-	text-align: center;
-	margin: 20px;
-	color: #5d5d5d;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
+<script src="aframe.min.js"></script>
+<script src="aframe-ar.js"></script>
+<script>THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'</script>
 
-<body>
-<h2 class="title">作品展示</h2>
-<ul id="dowebok"></ul>
-
-<script src="js/viewer.min.js"></script>
-<script>
-
-var dowebok =  document.getElementById("dowebok");
-var imgs = [
-	{ src: './img/1.jpg' },
-	{ src: './img/2.jpg' },
-	{ src: './img/3.jpg' },
-	{ src: './img/4.jpg' },
-	{ src: './img/5.jpg' },
-	{ src: './img/6.jpg' },
-	{ src: './img/7.jpg' },
-	// { src: './img/8.jpg' },
-	{ src: './img/9.jpg' },
-	{ src: './img/10.jpg' },
-	{ src: './img/11.jpg' },
-	{ src: './img/12.jpg' },
-	{ src: './img/13.jpg' },
-	{ src: './img/14.jpg' },
-	{ src: './img/15.jpg' },
-	{ src: './img/16.jpg' },
-	{ src: './img/17.jpg' },
-	{ src: './img/18.jpg' },
-	{ src: './img/19.jpg' },
-	{ src: './img/20.jpg' },
-	{ src: './img/21.jpg' },
-	// { src: './img/22.jpg' },
-	{ src: './img/23.jpg' },
-	{ src: './img/24.jpg' },
-]
-
-for (var i = 0; i < imgs.length; i++) {
-	var img = document.createElement("img");
-	img.src = imgs[i].src;
-
-	var li = document.createElement("li");
-	li.appendChild(img);
-	dowebok.appendChild(li);
-}
-
-
-// setTimeout(function (argument) {
-	var viewer = new Viewer(document.getElementById('dowebok'), {	
-	url: 'data-original'
-});
-// }, 5000)
-
-
-</script>
-
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+    <a-marker type='pattern' url='res/pattern-marker.patt'>
+      <a-entity position='-3 2 0' text="width: 5; value:I am Psyduck. We are pokemon. We love you"></a-entity>
+      <a-entity position='0 0 0' gltf-model="url(res/catpuccino/scene.gltf)"></a-entity>
+    </a-marker>
+  </a-scene>
 </body>
+
 </html>
